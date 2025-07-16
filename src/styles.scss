@@ -1,3 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+// var
+$primary: #cba135;
+$white: #f5f5f5;
+
+// tailwindcss and daisy ui
 @import "tailwindcss";
 @plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(98% 0 0);
+  --color-base-300: oklch(95% 0 0);
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: #cba135;
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b4f2e;
+  --color-secondary-content: #f5f5f5;
+  --color-accent: #4a4a4a;
+  --color-accent-content: #f5f5f5;
+  --color-neutral: #1c1c1c;
+  --color-neutral-content: #f5f5f5;
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+// scroll
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $primary $white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $primary;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $white;
+  border-radius: 20px;
+  border: 3px solid $primary;
+}
+
+// font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  font-weight: bold;
+}
