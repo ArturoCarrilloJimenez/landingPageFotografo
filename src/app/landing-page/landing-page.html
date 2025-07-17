@@ -1,16 +1,29 @@
+<!-- Hero -->
 <landing-page-hero></landing-page-hero>
-<div class="sticky top-0 py-12 bg-base-100 text-center">
-  <section class="py-6">
-    <div class="pb-2">
-      <h2 class="text-3xl font-semibold pb-2">Trabajos Destacados</h2>
-      <p>
-        Una selección de mis trabajos más representativos que capturan la
-        esencia de cada momento.
-      </p>
-    </div>
+
+<!-- Contend -->
+<div class="sticky top-0 bg-base-100 text-center">
+  <!-- Best Images Loop -->
+  <section class="py-20">
+    <shared-header
+      [title]="'Trabajos Destacados'"
+      [description]="'Una selección de mis trabajos más representativos que capturan la esencia de cada momento'"
+    ></shared-header>
     <landing-page-infinite-loop></landing-page-infinite-loop>
   </section>
+
+  <!-- About me -->
   <landing-page-about-me></landing-page-about-me>
+
+  <!-- Gallery -->
+  <section class="py-20">
+    <shared-header
+      [title]="'Galería'"
+      [description]="'Una colección de mis mejores fotografías que capturan la belleza del mundo'"
+    ></shared-header>
+    <landing-page-profile></landing-page-profile>
+  </section>
 </div>
 
+<!-- Contact -->
 <shared-btn-whatsapp></shared-btn-whatsapp>

@@ -1,4 +1,4 @@
-<section id="infinite-loop" class="overflow-x-hidden relative py-10">
+<section id="infinite-loop" class="overflow-x-hidden relative">
     <!-- Sombras laterales para dar profundidad -->
     <div
       class="pointer-events-none absolute inset-y-0 left-0 w-15 sm:w-30 bg-gradient-to-r from-base-100 to-transparent z-20"
@@ -9,7 +9,7 @@
 
     <!-- Carrusel horizontal animado -->
     <div
-      class="flex gap-10 w-max animate-loop-scroll hover:[animation-play-state:paused] px-8"
+      class="flex gap-10 w-max animate-loop-scroll px-8"
     >
       <div
         *ngFor="let img of loopImagesWithDuplicates"
@@ -18,7 +18,7 @@
         <img
           [src]="img.src"
           [alt]="img.alt"
-          class="h-25 w-50 object-cover rounded-xl opacity-80 sm:h-50 sm:w-100 group-hover:opacity-100 group-hover:scale-105 transition duration-500 ease-in-out"
+          class="h-38 w-75 object-cover rounded-xl opacity-80 sm:h-50 sm:w-100 transition duration-500 ease-in-out"
         />
       </div>
     </div>
