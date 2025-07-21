@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { environment } from '../../../environments/environments';
 
 interface PortfolioItem {
   id: number;
@@ -18,6 +19,10 @@ interface PortfolioItem {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfileComponent {
+  visibleItems = signal(6);
+  urlContact = environment.urlContact;
+  messageContact = 'Hola, he visto tu perfil y me gustaría contactarte para hablar sobre un proyecto.';
+
   portfolioItems: PortfolioItem[] = [
     {
       id: 1,
@@ -116,8 +121,6 @@ export class ProfileComponent {
       category: 'Retrato',
     },
   ];
-
-  visibleItems = signal(6);
 
   showMoreItems = () => {
     this.visibleItems.update((v) => v + 3);

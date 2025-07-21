@@ -8,6 +8,7 @@ import {
   ProfileComponent,
 } from './components';
 import { BtnWhatsappComponent, HeaderComponent, NavbarComponent } from '../shared/components';
+import { FooterComponent } from "../shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-landing-page',
@@ -20,7 +21,8 @@ import { BtnWhatsappComponent, HeaderComponent, NavbarComponent } from '../share
     ProfileComponent,
     PricingSectionComponent,
     NavbarComponent,
-  ],
+    FooterComponent
+],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
 })
