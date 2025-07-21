@@ -1,0 +1,84 @@
+<div
+  [ngClass]="{
+        'max-w-7xl px-6 mx-auto transition-all duration-1000 delay-300': true,
+      }"
+>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div
+      *ngFor="let item of portfolioItems.slice(0, visibleItems()); let i = index"
+      class="group cursor-pointer relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
+    >
+      <div class="aspect-[4/3] relative">
+        <img
+          [src]="item.src"
+          [alt]="item.alt"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-neutral/80 via-neutral/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        ></div>
+
+        <div
+          class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0"
+        >
+          <div class="text-neutral-content">
+            <h3 class="text-xl mb-2">
+              {{ item.title }}
+            </h3>
+            <p class="text-sm">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="absolute top-4 left-4 bg-neutral/80 backdrop-blur-sm rounded-full px-3 py-1"
+        >
+          <span class="text-neutral-content text-xs font-semibold"
+            >{{ item.category }}</span
+          >
+        </div>
+
+        <div
+          class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <div class="bg-ochre/90 backdrop-blur-sm rounded-full p-2">👁</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ver más -->
+  <div
+    *ngIf="visibleItems() < portfolioItems.length"
+    [ngClass]="{
+          'text-center mt-12 transition-all duration-1000 delay-500': true,
+        }"
+  >
+    <button
+      (click)="showMoreItems()"
+      class="bg-primary hover:bg-sepia text-primary-content font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+    >
+      Ver Más Trabajos
+      <span class="ml-2 text-sm"
+        >({{ portfolioItems.length - visibleItems() }} restantes)</span
+      >
+    </button>
+  </div>
+
+  <!-- Todos mostrados -->
+  <div
+    *ngIf="visibleItems() >= portfolioItems.length"
+    [ngClass]="{
+          'text-center mt-12 transition-all duration-1000 delay-500': true,
+        }"
+  >
+    <p class="text-slate text-lg">
+      ✨ Has visto todos mis trabajos destacados ✨
+    </p>
+    <p class="text-slate text-sm mt-2">
+      ¿Te gusta lo que ves? ¡Hablemos de tu próximo proyecto!
+    </p>
+  </div>
+</div>

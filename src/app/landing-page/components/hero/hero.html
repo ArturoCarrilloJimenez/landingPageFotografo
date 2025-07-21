@@ -15,14 +15,32 @@
         excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
         id nisi.
       </p>
-      <button class="btn btn-primary">Get Started</button>
+      <a
+        [href]="contactUrl + '?text=' + message"
+        target="_blank"
+        class="btn btn-primary"
+        >Solicitar sesión</a
+      >
     </div>
   </div>
 
   <!-- Flecha superpuesta en la parte inferior -->
-  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce text-white z-10">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+  <div
+    class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce text-white z-10"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-8 h-8"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
     </svg>
   </div>
 </header>

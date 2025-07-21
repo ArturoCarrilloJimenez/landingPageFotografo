@@ -1,10 +1,12 @@
+<shared-navbar></shared-navbar>
+
 <!-- Hero -->
-<landing-page-hero></landing-page-hero>
+<landing-page-hero id="hero"></landing-page-hero>
 
 <!-- Contend -->
 <div class="sticky top-0 bg-base-100 text-center">
   <!-- Best Images Loop -->
-  <section class="py-20">
+  <section class="py-20" >
     <shared-header
       [title]="'Trabajos Destacados'"
       [description]="'Una selección de mis trabajos más representativos que capturan la esencia de cada momento'"
@@ -14,10 +16,10 @@
   </section>
 
   <!-- About me -->
-  <landing-page-about-me></landing-page-about-me>
+  <landing-page-about-me id="about"></landing-page-about-me>
 
   <!-- Gallery -->
-  <section class="py-20">
+  <section class="py-20" id="portfolio">
     <shared-header
       [title]="'Galería'"
       [description]="'Una colección de mis mejores fotografías que capturan la belleza del mundo'"
@@ -27,7 +29,7 @@
   </section>
 
   <!-- Pricing Section -->
-  <section class="py-20 bg-neutral text-neutral-content">
+  <section class="py-20 bg-neutral text-neutral-content" id="pricing">
     <shared-header
       [title]="'Precios'"
       [description]="'Ofrezco paquetes flexibles para adaptarme a tus necesidades y presupuesto'"

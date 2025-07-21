@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CardPricingComponent } from "../../../shared/templates/card-pricing/card-pricing.component";
+import { CardPricingComponent } from "../../../shared/components/";
 
 @Component({
   selector: 'landing-page-pricing-section',

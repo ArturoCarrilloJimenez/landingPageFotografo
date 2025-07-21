@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { environment } from '../../../environments/environments';
 
 @Component({
   selector: 'shared-card-pricing',
@@ -18,4 +19,7 @@ export class CardPricingComponent {
     '10 fotos editadas',
     'Entrega digital',
   ]);
+
+  urlContact = environment.urlContact;
+  messageContact = `Hola, estoy interesado en el paquete: ${this.title()}. ¿Podrías darme más información?`;
 }

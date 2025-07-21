@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from '../../../environments/environments';
 
 @Component({
   selector: 'shared-btn-whatsapp',
@@ -7,4 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './btn-whatsapp.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BtnWhatsappComponent { }
+export class BtnWhatsappComponent {
+  contactUrl = environment.urlContact;
+  message = 'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
+}

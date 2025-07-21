@@ -1,0 +1,90 @@
+<nav
+  [ngClass]="{ 'bg-neutral/80 backdrop-blur-md shadow-md': scrolled }"
+  class="fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out"
+>
+  <div class="container mx-auto flex items-center justify-center md:justify-between p-4 px-12">
+    <!-- Logo / Marca -->
+    <a href="#hero" class="text-xl font-bold text-primary">TuMarca</a>
+
+    <!-- Menú Desktop -->
+    <ul class="hidden md:flex space-x-6 text-neutral-content">
+      <li>
+        <a href="#hero" class="hover:text-primary transition font-bold">Inicio</a>
+      </li>
+      <li>
+        <a href="#about" class="hover:text-primary transition font-bold">Sobre mí</a>
+      </li>
+      <li>
+        <a href="#portfolio" class="hover:text-primary transition font-bold">Portafolio</a>
+      </li>
+      <li>
+        <a href="#pricing" class="hover:text-primary transition font-bold">Precios</a>
+      </li>
+    </ul>
+
+    <!-- Menú Móvil (Drawer) -->
+    <div class="drawer drawer-end text-right md:hidden">
+      <!-- Toggle oculto, controlado desde TS -->
+      <input
+        id="mobile-drawer"
+        type="checkbox"
+        class="drawer-toggle"
+        [checked]="isOpen"
+        (change)="toggleMenu()"
+      />
+
+      <!-- Botón Hamburguesa -->
+      <div class="drawer-content">
+        <button
+          aria-label="Menú"
+          (click)="toggleMenu()"
+          class="text-neutral-content focus:outline-none"
+        >
+          <svg *ngIf="!isOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg *ngIf="isOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Panel Lateral -->
+      <div class="drawer-side">
+        <!-- Overlay para cerrar al click fuera -->
+        <label for="mobile-drawer" class="drawer-overlay"></label>
+        <ul class="menu bg-base-200 text-base-content min-h-full w-64 p-6 space-y-4">
+          <li>
+            <a href="#hero" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#about" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+              Sobre mí
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+              Portafolio
+            </a>
+          </li>
+          <li>
+            <a href="#pricing" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+              Precios
+            </a>
+          </li>
+          <li class="mt-4">
+            <a
+              href="https://wa.me/34608227891"
+              target="_blank"
+              class="btn btn-primary btn-block text-center"
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
