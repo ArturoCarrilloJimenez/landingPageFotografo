@@ -1,19 +1,28 @@
-<footer class="bg-neutral/80 text-white py-10 px-6">
+<footer
+  class="bg-neutral/90 text-white py-12 px-6"
+  itemscope
+  itemtype="https://schema.org/LocalBusiness"
+>
   <div
-    class="container mx-auto flex flex-col md:flex-row md:justify-between px-4"
+    class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
   >
-    <!-- Logo y descripción -->
-    <div class="mb-8 md:mb-0 md:w-1/3">
-      <h2 class="text-2xl font-extrabold mb-4">
-        <img [src]="urlLogo" alt="Photo Josma Logo" title="Photo Josma Logo" class="h-20 inline-block" />
-      </h2>
-      <p class="text-sm opacity-80">
-        Capturando momentos únicos con visión artística y profesionalismo.
+    <!-- 1. Logo, descripción y RRSS -->
+    <div itemprop="name">
+      <img [src]="urlLogo" alt="Photo Josma Logo" class="h-20 mb-4 mx-auto" />
+      <p class="text-sm opacity-80 mb-4" itemprop="description">
+        Capturando momentos únicos con cercanía, profesionalidad y entrega
+        rápida.
       </p>
-
       <!-- Redes sociales -->
-      <div class="flex mt-4 space-x-4">
-        <a class="link" href="https://www.instagram.com/sr.josma/" target="_blank" data-tippy-content="@instagram_handle">
+      <div
+        class="flex mt-4 space-x-4 items-center justify-center md:justify-center"
+      >
+        <a
+          class="link"
+          href="https://www.instagram.com/sr.josma/"
+          target="_blank"
+          data-tippy-content="@instagram_handle"
+        >
           <svg
             fill="#fff"
             height="24px"
@@ -57,37 +66,72 @@
       </div>
     </div>
 
-    <!-- Contacto -->
-    <div class="mb-8 md:mb-0">
-      <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+    <!-- 2. Enlaces rápidos -->
+    <nav aria-label="Enlaces rápidos">
+      <h3 class="text-lg font-semibold mb-3">Enlaces</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#hero" class="hover:underline">Inicio</a></li>
+        <li><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
+        <li><a href="#portfolio" class="hover:underline">Portafolio</a></li>
+        <li><a href="#pricing" class="hover:underline">Precios</a></li>
+      </ul>
+    </nav>
+
+    <!-- 3. Contacto -->
+    <div
+      itemprop="address"
+      itemscope
+      itemtype="https://schema.org/PostalAddress"
+    >
+      <h3 class="text-lg font-semibold mb-3">Contacto</h3>
       <ul class="space-y-2 text-sm">
         <li>
-          <a [href]="urlContact" class="hover:underline" target="_blank"
-            >+34 608 22 78 91</a
+          <a
+            href="tel:+34608227891"
+            class="hover:underline"
+            itemprop="telephone"
           >
-        </li>
-        <li>
-          <a href="mailto:contacto@fotografo.com" class="hover:underline">
-            josemanuelgarciatrave&#64;gmail.com
+            +34 608 227 891
           </a>
         </li>
-        <li>Almería, España</li>
+        <li>
+          <a
+            href="mailto:contacto@photojosma.com"
+            class="hover:underline"
+            itemprop="email"
+          >
+            contacto&#64;photojosma.com
+          </a>
+        </li>
+        <li itemprop="addressLocality">Almería, España</li>
       </ul>
     </div>
 
-    <!-- Servicios -->
+    <!-- 4. Áreas de servicio + Newsletter -->
     <div>
-      <h3 class="text-xl font-semibold mb-4">Servicios</h3>
-      <ul class="space-y-2 text-sm">
-        <li>Retratos</li>
-        <li>Eventos</li>
-        <li>Bodas</li>
+      <h3 class="text-lg font-semibold mb-3">Áreas de servicio</h3>
+      <ul class="space-y-1 text-sm mb-4">
+        <li>Almería</li>
+        <li>Granada</li>
+        <li>Guadix</li>
+        <li>Roquetas de Mar & Aguadulce</li>
       </ul>
+      <p class="mt-2 text-xs opacity-75">
+        Desplazamiento con vehículo (extra por km)
+      </p>
     </div>
   </div>
 
-  <!-- Derechos -->
-  <div class="text-center mt-10 text-xs opacity-60">
-    &copy; 2025 Fotografía PVT. LTD. Todos los derechos reservados.
+  <!-- Derechos y mapa -->
+  <div class="mt-10 text-center text-xs opacity-60">
+    <p>&copy; 2025 Photo Josma. Todos los derechos reservados.</p>
+    <a
+      href="https://goo.gl/maps/XXXX"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:underline"
+    >
+      Ver en Google Maps
+    </a>
   </div>
 </footer>
