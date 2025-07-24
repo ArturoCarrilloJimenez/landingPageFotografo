@@ -8,10 +8,11 @@
       *ngFor="let item of portfolioItems.slice(0, visibleItems()); let i = index"
       class="group cursor-pointer relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
     >
-      <div class="aspect-[4/3] relative">
+      <div class="aspect-[4/5] relative">
         <img
           [src]="item.src"
           [alt]="item.alt"
+          [title]="item.title"
           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
 
