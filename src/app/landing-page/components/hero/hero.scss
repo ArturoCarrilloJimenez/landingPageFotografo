@@ -1,0 +1,12 @@
+.hero {
+  background-image: url("/images/hero/chica_playa_h.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("/images/hero/chica_playa_v.webp");
+    background-position: top center;
+  }
+}

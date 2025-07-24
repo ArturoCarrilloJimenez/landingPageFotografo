@@ -1,7 +1,13 @@
 <div
-  class="mx-auto px-6 grid max-w-lg grid-cols-1 items-center gap-y-6  lg:max-w-4xl lg:grid-cols-3"
+  class="mx-auto px-6 grid max-w-lg grid-cols-1 gap-6 lg:max-w-4xl lg:grid-cols-3 auto-rows-fr items-stretch"
 >
-  <shared-card-pricing position="left"></shared-card-pricing>
-  <shared-card-pricing position="center"></shared-card-pricing>
-  <shared-card-pricing position="right"></shared-card-pricing>
+  <shared-card-pricing
+    *ngFor="let card of pricingCards"
+    [title]="card.title"
+    [description]="card.description"
+    [price]="card.price"
+    [features]="card.features"
+    [isRecommended]="card.isRecommended ?? false"
+    class="h-full"
+  ></shared-card-pricing>
 </div>

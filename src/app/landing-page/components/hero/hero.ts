@@ -5,9 +5,11 @@ import { environment } from '../../../environments/environments';
   selector: 'landing-page-hero',
   imports: [],
   templateUrl: './hero.html',
-  styleUrl: './hero.scss'
+  styleUrl: './hero.scss',
 })
 export class Hero {
   contactUrl = environment.urlContact;
-    message = 'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
+  message =
+    'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
+  logoUrl = environment.logoUrl;
 }

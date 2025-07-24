@@ -1,13 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LandingPageFotografo</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Photo Josma | Fotógrafo de Retratos y Parejas en Almería, Granada y Guadix
+    </title>
+    <meta
+      name="description"
+      content="Photo Josma, fotógrafo profesional en Almería, Granada, Guadix y Roquetas. Sesiones de retrato y parejas al aire libre: Plan Básico, Estándar, Premium y Personalizado. Reserva ya tu sesión personalizada con cercanía y calidad garantizada."
+    />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+
+  <!-- TODO cambiar por datos reales -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Photographer",
+      "name": "Photo Josma",
+      "description": "Fotógrafo de retratos y parejas en Almería, Granada, Guadix, Roquetas y Aguadulce. Sesiones al aire libre con planes Básico, Estándar, Premium y Personalizados.",
+      "image": "/images/logo/logo-white.webp",
+      "telephone": "+34 608 22 78 91",
+      "areaServed": [
+        "Almería",
+        "Granada",
+        "Guadix",
+        "Roquetas de Mar",
+        "Aguadulce"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planes de Sesión",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Plan Básico",
+            "description": "30 min al aire libre, 30 fotos con edición básica",
+            "price": "25.00",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Plan Estándar",
+            "description": "1 h al aire libre, 50 fotos con edición básica",
+            "price": "45.00",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Plan Premium",
+            "description": "2 h al aire libre, 100 fotos con edición completa",
+            "price": "90.00",
+            "priceCurrency": "EUR"
+          }
+        ]
+      },
+      "url": "https://tusitio.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "reservas",
+        "telephone": "+34 608 22 78 91",
+        "contactOption": "TollFree"
+      }
+    }
+  </script>
 </html>

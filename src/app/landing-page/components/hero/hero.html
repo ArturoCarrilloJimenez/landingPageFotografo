@@ -1,19 +1,17 @@
-<header
-  id="hero"
-  class="hero min-h-screen sticky top-0"
-  style="
-    background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);
-  "
->
+<header id="hero" class="hero min-h-screen sticky top-0">
   <div class="hero-overlay"></div>
 
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl md:text-7xl font-bold">Hello there</h1>
+      <h1 class="mb-5 text-5xl md:text-7xl font-bold">
+        <img [src]="logoUrl" alt="Photo Josma" />
+      </h1>
+      <p class="mb-5 font-semibold">
+        Fotógrafo de Retratos y Parejas en Almería
+      </p>
       <p class="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi.
+        Sesiones al aire libre en Almería, Granada, Guadix y Roquetas. Cercanía,
+        profesionalidad y calidad garantizada.
       </p>
       <a
         [href]="contactUrl + '?text=' + message"

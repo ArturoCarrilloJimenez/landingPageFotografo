@@ -10,7 +10,7 @@ import { environment } from '../../../environments/environments';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardPricingComponent {
-  position = input<'left' | 'right' | 'center'>('left');
+  isRecommended = input<boolean>(false);
   title = input<string>('Paquete Básico');
   description = input<string>('Ideal para sesiones cortas o eventos pequeños.');
   price = input<string>('100 €');

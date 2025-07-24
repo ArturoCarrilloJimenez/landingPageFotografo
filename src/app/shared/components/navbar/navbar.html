@@ -2,23 +2,34 @@
   [ngClass]="{ 'bg-neutral/80 backdrop-blur-md shadow-md': scrolled }"
   class="fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out"
 >
-  <div class="container mx-auto flex items-center justify-center md:justify-between p-4 px-12">
+  <div
+    class="container mx-auto flex items-center justify-center md:justify-between p-4 px-12"
+  >
     <!-- Logo / Marca -->
-    <a href="#hero" class="text-xl font-bold text-primary">TuMarca</a>
-
+    <a href="#hero" class="text-xl font-bold text-primary"
+      ><img class="h-10" [src]="urlLogo" alt="Photo Josma"
+    /></a>
     <!-- Menú Desktop -->
     <ul class="hidden md:flex space-x-6 text-neutral-content">
       <li>
-        <a href="#hero" class="hover:text-primary transition font-bold">Inicio</a>
+        <a href="#hero" class="hover:text-primary transition font-bold"
+          >Inicio</a
+        >
       </li>
       <li>
-        <a href="#about" class="hover:text-primary transition font-bold">Sobre mí</a>
+        <a href="#portfolio" class="hover:text-primary transition font-bold"
+          >Portafolio</a
+        >
       </li>
       <li>
-        <a href="#portfolio" class="hover:text-primary transition font-bold">Portafolio</a>
+        <a href="#about" class="hover:text-primary transition font-bold"
+          >Sobre mí</a
+        >
       </li>
       <li>
-        <a href="#pricing" class="hover:text-primary transition font-bold">Precios</a>
+        <a href="#pricing" class="hover:text-primary transition font-bold"
+          >Servicios</a
+        >
       </li>
     </ul>
 
@@ -40,11 +51,31 @@
           (click)="toggleMenu()"
           class="text-neutral-content focus:outline-none"
         >
-          <svg *ngIf="!isOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            *ngIf="!isOpen"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
-          <svg *ngIf="isOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            *ngIf="isOpen"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
@@ -53,24 +84,42 @@
       <div class="drawer-side">
         <!-- Overlay para cerrar al click fuera -->
         <label for="mobile-drawer" class="drawer-overlay"></label>
-        <ul class="menu bg-base-200 text-base-content min-h-full w-64 p-6 space-y-4">
+        <ul
+          class="menu bg-base-200 text-base-content min-h-full w-64 p-6 space-y-4"
+        >
           <li>
-            <a href="#hero" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+            <a
+              href="#hero"
+              (click)="toggleMenu()"
+              class="text-lg font-medium hover:text-primary"
+            >
               Inicio
             </a>
           </li>
           <li>
-            <a href="#about" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+            <a
+              href="#about"
+              (click)="toggleMenu()"
+              class="text-lg font-medium hover:text-primary"
+            >
               Sobre mí
             </a>
           </li>
           <li>
-            <a href="#portfolio" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+            <a
+              href="#portfolio"
+              (click)="toggleMenu()"
+              class="text-lg font-medium hover:text-primary"
+            >
               Portafolio
             </a>
           </li>
           <li>
-            <a href="#pricing" (click)="toggleMenu()" class="text-lg font-medium hover:text-primary">
+            <a
+              href="#pricing"
+              (click)="toggleMenu()"
+              class="text-lg font-medium hover:text-primary"
+            >
               Precios
             </a>
           </li>

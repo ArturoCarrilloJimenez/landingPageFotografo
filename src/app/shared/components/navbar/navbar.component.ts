@@ -1,5 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostListener,
+} from '@angular/core';
+import { environment } from '../../../environments/environments';
 
 @Component({
   selector: 'shared-navbar',
@@ -10,6 +15,8 @@ import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
+  urlLogo = environment.logoUrl;
+
   scrolled = false;
   isOpen = false;
 
