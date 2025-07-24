@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 interface LoopImage {
   src: string;
   alt: string;
+  title: string;
 }
 
 @Component({
@@ -16,40 +17,34 @@ interface LoopImage {
 export class InfiniteLoop {
   loopImages: LoopImage[] = [
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 1',
+      src: 'images/destacadas/individual/chica_playa_v.webp',
+      alt: 'Retrato íntimo con luz natural y enfoque selectivo.',
+      title: 'Retrato íntimo con luz natural y enfoque selectivo.',
     },
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 2',
+      src: 'images/destacadas/individual/chico_barba_mirando_camara.webp',
+      alt: 'Chico mirando a cámara con luz suave y fondo desenfocado.',
+      title: 'Chico mirando a cámara con luz suave y fondo desenfocado.',
     },
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 3',
+      src: 'images/destacadas/parejas/pareja_playa_v.webp',
+      alt: 'Pareja abrazada en atardecer dorado (tonos cálidos).',
+      title: 'Pareja abrazada en atardecer dorado (tonos cálidos).',
     },
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 4',
+      src: 'images/destacadas/individual/chica_concierto_v.webp',
+      alt: 'Artista en concierto con luz dramática y enfoque en el rostro.',
+      title: 'Artista en concierto con luz dramática y enfoque en el rostro.',
     },
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 5',
+      src: 'images/destacadas/individual/chica_vestido_negro_mirada_v.webp',
+      alt: 'Chica mirando a cámara detrás de un arbusto',
+      title: 'Chica mirando a cámara detrás de un arbusto',
     },
     {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 6',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 7',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 8',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60',
-      alt: 'Image 9',
+      src: 'images/destacadas/individual/chico_barba_v.webp',
+      alt: 'Chico viendo el paisaje con una sonrisa',
+      title: 'Chico viendo el paisaje con una sonrisa',
     },
   ];
 
