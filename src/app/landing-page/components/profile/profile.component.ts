@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { environment } from '../../../environments/environments';
 import { portfolioItems } from './data/profileData';
 
 @Component({
   selector: 'landing-page-profile',
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './profile.html',
   styleUrl: './profile.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

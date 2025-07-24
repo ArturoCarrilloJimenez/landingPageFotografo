@@ -10,8 +10,9 @@
     >
       <div class="aspect-[4/5] w-full relative">
         <img
-          loading="lazy"
-          [src]="item.src"
+          [ngSrc]="item.src"
+          width="400"
+          height="500"
           [alt]="item.alt"
           [title]="item.title"
           [style]="item.style"

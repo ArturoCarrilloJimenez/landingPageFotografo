@@ -10,4 +10,6 @@
 
 .animate-loop-scroll {
   animation: loop-scroll 80s linear infinite;
+  will-change: transform; /* Aislar en capa GPU */
+  backface-visibility: hidden; /* Optimizar renderizado */
 }
