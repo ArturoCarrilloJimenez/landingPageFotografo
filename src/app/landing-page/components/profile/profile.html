@@ -8,13 +8,20 @@
       *ngFor="let item of portfolioItems.slice(0, visibleItems()); let i = index"
       class="group cursor-pointer relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
     >
+<<<<<<< HEAD
       <div class="aspect-[4/5] w-full relative">
+=======
+      <div class="aspect-[4/3] relative">
+>>>>>>> parent of 35088aa (add: selección de imágenes)
         <img
           loading="lazy"
           [src]="item.src"
           [alt]="item.alt"
+<<<<<<< HEAD
           [title]="item.title"
           [style]="item.style"
+=======
+>>>>>>> parent of 35088aa (add: selección de imágenes)
           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
 
