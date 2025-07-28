@@ -1,54 +1,58 @@
 <div
-  class="group relative rounded-3xl bg-base-100 text-base-content p-8 ring-1 ring-neutral/10 shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
+class="group relative flex flex-col justify-between rounded-3xl bg-base-100 text-base-content p-8 ring-1 h-full ring-neutral/10 shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
   role="region"
   [attr.aria-label]="'Plan de ' + title()"
   [ngClass]="{ 'border-2 border-primary': isRecommended() }"
 >
-  <!-- Título y descripción -->
-  <header>
-    <h3 class="text-3xl font-extrabold text-neutral mb-2">{{ title() }}</h3>
-    <p class="text-sm text-neutral/70 mb-6">{{ description() }}</p>
-  </header>
+  <div>
+    <!-- Título y descripción -->
+    <header>
+      <h3 class="text-3xl font-extrabold text-neutral mb-2">{{ title() }}</h3>
+      <p class="text-sm text-neutral/70 mb-6">{{ description() }}</p>
+    </header>
 
-  <div class="border-t border-primary/20 opacity-30 my-6"></div>
+    <div class="border-t border-primary/20 opacity-30 my-6"></div>
 
-  <!-- Lista de características -->
-  <ul role="list" class="space-y-4 text-sm text-left">
-    <li *ngFor="let feature of features()" class="flex items-start gap-x-3">
-      <svg
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        aria-hidden="true"
-        class="h-6 w-6 flex-none text-primary"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-        />
-      </svg>
-      <span class="flex-1">{{ feature }}</span>
-    </li>
-  </ul>
-
-  <div class="border-t border-primary/20 opacity-30 my-6"></div>
-
-  <!-- Precio -->
-  <div class="flex items-baseline gap-x-2">
-    <span class="text-5xl font-extrabold tracking-tight text-gray-900">
-      {{ price() }}
-    </span>
-    <span class="text-sm text-neutral/70">/ sesión</span>
+    <!-- Lista de características -->
+    <ul role="list" class="space-y-4 text-sm text-left">
+      <li *ngFor="let feature of features()" class="flex items-start gap-x-3">
+        <svg
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          class="h-6 w-6 flex-none text-primary"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+          />
+        </svg>
+        <span class="flex-1">{{ feature }}</span>
+      </li>
+    </ul>
   </div>
 
-  <!-- Botón de reserva -->
-  <a
-    [href]="urlContact + '?text=' + messageContact"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="mt-8 inline-block w-full text-center font-semibold text-base-content btn btn-primary py-3 rounded-2xl transition hover:bg-primary-focus focus:outline-none focus:ring-4 focus:ring-primary/50"
-    [attr.aria-label]="'Reservar sesión de ' + title()"
-  >
-    Reserva tu sesión
-  </a>
+  <div class="mt-auto flex flex-col items-center">
+    <div class="border-t border-primary/20 opacity-30 my-6"></div>
+
+    <!-- Precio -->
+    <div class="flex items-baseline gap-x-2">
+      <span class="text-5xl font-extrabold tracking-tight text-gray-900">
+        {{ price() }}
+      </span>
+      <span class="text-sm text-neutral/70">/ sesión</span>
+    </div>
+
+    <!-- Botón de reserva -->
+    <a
+      [href]="urlContact + '?text=' + messageContact"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-8 inline-block w-full text-center font-semibold text-base-content btn btn-primary py-3 rounded-2xl transition hover:bg-primary-focus focus:outline-none focus:ring-4 focus:ring-primary/50"
+      [attr.aria-label]="'Reservar sesión de ' + title()"
+    >
+      Reserva tu sesión
+    </a>
+  </div>
 </div>
