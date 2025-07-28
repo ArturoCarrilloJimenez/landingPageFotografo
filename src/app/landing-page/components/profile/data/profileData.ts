@@ -3,7 +3,7 @@ interface PortfolioItem {
   alt: string;
   title: string;
   description: string;
-  category: 'Retrato Individual' | 'Pareja' | 'Paisaje' | 'Eventos';
+  category: 'Retrato Individual' | 'Pareja' | 'Paisaje' | 'Eventos' | 'Conciertos';
   style?: string;
 }
 
@@ -71,7 +71,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Retrato de artista DJ en estudio | Fotógrafo Almería retratos',
     description:
       'Sesión de retrato de DJ: actitud, luces y estilo moderno. Fotógrafo de retrato individual en Almería, Granada y alrededores.',
-    category: 'Retrato Individual',
+    category: 'Conciertos',
     style: 'object-position: top;',
   },
   {
@@ -139,11 +139,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/individual/chica_concierto_v.webp',
-    alt: 'Retrato de asistente en concierto con ambiente vibrante en Almería',
-    title: 'Retrato de asistente en concierto | Fotógrafo Almería eventos',
+    alt: 'Retrato de artista en concierto con ambiente vibrante en Almería',
+    title: 'Retrato de artista en concierto | Fotógrafo Almería eventos',
     description:
-      'Captura de espectadora en concierto con ambiente vibrante. Fotógrafo de eventos y retratos en Almería, Granada y alrededores.',
-    category: 'Retrato Individual',
+      'Captura de artista en concierto con ambiente vibrante. Fotógrafo de eventos y retratos en Almería, Granada y alrededores.',
+    category: 'Conciertos',
   },
   {
     src: 'images/destacadas/parejas/pareja_playa_2_v.webp',

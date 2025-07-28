@@ -3,12 +3,19 @@
   itemscope
   itemtype="https://schema.org/LocalBusiness"
 >
+  <meta itemprop="creator" content="Arthur Carrillo Jimenez" />
+
   <div
     class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
   >
     <!-- 1. Logo, descripción y RRSS -->
     <div itemprop="name">
-      <img loading="lazy"  [src]="urlLogo" alt="Photo Josma Logo" class="h-20 mb-4 mx-auto" />
+      <img
+        loading="lazy"
+        [src]="urlLogo"
+        alt="Photo Josma Logo"
+        class="h-20 mb-4 mx-auto"
+      />
       <p class="text-sm opacity-80 mb-4" itemprop="description">
         Capturando momentos únicos con cercanía, profesionalidad y entrega
         rápida.
@@ -123,15 +130,23 @@
   </div>
 
   <!-- Derechos y mapa -->
-  <div class="mt-10 text-center text-xs opacity-60">
+  <div class="text-center">
+    <p class="text-sm opacity-75 my-4">
+      Desarrollado por <strong>Arturo Carrillo Jiménez</strong>. Si tienes algo en mente       <a
+        href="mailto:acarrilloj05@gmail.com?subject=Solicitud%20de%20sitio%20web"
+        class="underline font-medium hover:text-blue-400 transition-colors"
+        >escríbeme (acarrilloj05&#64;gmail.com)</a
+      >
+      o visita mi
+      <a
+        href="https://www.linkedin.com/in/arturo-carrillo-jimenez/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline font-medium hover:text-blue-400 transition-colors"
+        >LinkedIn</a
+      >
+    </p>
+
     <p>&copy; 2025 Photo Josma. Todos los derechos reservados.</p>
-    <a
-      href="https://goo.gl/maps/XXXX"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="hover:underline"
-    >
-      Ver en Google Maps
-    </a>
   </div>
 </footer>
