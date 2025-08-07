@@ -7,7 +7,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import { environment } from '../../../environments/environments';
+import { environment } from '../../../../environments/environment';
 import { portfolioItems } from './data/profileData';
 
 @Component({

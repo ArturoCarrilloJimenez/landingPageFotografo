@@ -77,10 +77,34 @@
     <nav aria-label="Enlaces rápidos">
       <h3 class="text-lg font-semibold mb-3">Enlaces</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="#hero" class="hover:underline">Inicio</a></li>
-        <li><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
-        <li><a href="#portfolio" class="hover:underline">Portafolio</a></li>
-        <li><a href="#pricing" class="hover:underline">Precios</a></li>
+        <li>
+          <a
+            (click)="scrollToSection('hero')"
+            class="cursor-pointer hover:underline"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('sobre-mi')"
+            class="cursor-pointer hover:underline"
+            >Sobre mí</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('portfolio')"
+            class="cursor-pointer hover:underline"
+            >Portafolio</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('pricing')"
+            class="cursor-pointer hover:underline"
+            >Precios</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -131,22 +155,6 @@
 
   <!-- Derechos y mapa -->
   <div class="text-center">
-    <p class="text-sm opacity-75 my-4">
-      Desarrollado por <strong>Arturo Carrillo Jiménez</strong>. Si tienes algo en mente       <a
-        href="mailto:acarrilloj05@gmail.com?subject=Solicitud%20de%20sitio%20web"
-        class="underline font-medium hover:text-blue-400 transition-colors"
-        >escríbeme (acarrilloj05&#64;gmail.com)</a
-      >
-      o visita mi
-      <a
-        href="https://www.linkedin.com/in/arturo-carrillo-jimenez/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline font-medium hover:text-blue-400 transition-colors"
-        >LinkedIn</a
-      >
-    </p>
-
     <p>&copy; 2025 Photo Josma. Todos los derechos reservados.</p>
   </div>
 </footer>

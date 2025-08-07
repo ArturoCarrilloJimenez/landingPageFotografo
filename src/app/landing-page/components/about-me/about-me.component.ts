@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { environment } from '../../../environments/environments';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'landing-page-about-me',
@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environments';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutMeComponent {
-  contactUrl = environment.urlContact;
-  message =
+  readonly contactUrl = environment.urlContact;
+  readonly message =
     'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
 }

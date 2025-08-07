@@ -6,28 +6,36 @@
     class="container mx-auto flex items-center justify-center md:justify-between p-4 px-12"
   >
     <!-- Logo / Marca -->
-    <a href="#hero" class="text-xl font-bold text-primary"
-      ><img loading="lazy"  class="h-10" [src]="urlLogo" alt="Photo Josma"
+    <a class="text-xl font-bold text-primary"
+      ><img loading="lazy" class="h-10" [src]="urlLogo" alt="Photo Josma"
     /></a>
     <!-- Menú Desktop -->
     <ul class="hidden md:flex space-x-6 text-neutral-content">
       <li>
-        <a href="#hero" class="hover:text-primary transition font-bold"
+        <a
+          (click)="scrollToSection('hero')"
+          class="hover:text-primary transition font-bold cursor-pointer"
           >Inicio</a
         >
       </li>
       <li>
-        <a href="#portfolio" class="hover:text-primary transition font-bold"
+        <a
+          (click)="scrollToSection('portfolio')"
+          class="hover:text-primary transition font-bold cursor-pointer"
           >Portafolio</a
         >
       </li>
       <li>
-        <a href="#about" class="hover:text-primary transition font-bold"
+        <a
+          (click)="scrollToSection('about')"
+          class="hover:text-primary transition font-bold cursor-pointer"
           >Sobre mí</a
         >
       </li>
       <li>
-        <a href="#pricing" class="hover:text-primary transition font-bold"
+        <a
+          (click)="scrollToSection('pricing')"
+          class="hover:text-primary transition font-bold cursor-pointer"
           >Servicios</a
         >
       </li>

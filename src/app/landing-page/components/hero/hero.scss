@@ -4,9 +4,24 @@
   background-position: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .hero {
     background-image: url("/images/hero/chica_playa_v.webp");
     background-position: top center;
   }
+}
+
+#descriptionEl {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.split-text-ready {
+  visibility: visible !important;
+}
+
+.char,
+.word,
+.line {
+  display: inline-block;
 }

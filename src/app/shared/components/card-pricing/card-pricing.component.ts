@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { environment } from '../../../environments/environments';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'shared-card-pricing',

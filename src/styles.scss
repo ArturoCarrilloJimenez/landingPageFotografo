@@ -47,26 +47,37 @@ $white: #f5f5f5;
 
 // scroll
 /* Works on Firefox */
-* {
+.hidden-scrollbar {
+  scrollbar-width: none; /* Ocultar en Firefox */
+}
+
+.show-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: $primary $white;
 }
 
 /* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Ocultar completamente */
+}
+
+.show-scrollbar::-webkit-scrollbar {
   width: 12px;
 }
 
-*::-webkit-scrollbar-track {
-  background: $primary;
+.show-scrollbar::-webkit-scrollbar-track {
+  background: $white;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: $white;
+.show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: $primary;
   border-radius: 20px;
-  border: 3px solid $primary;
+  border: 3px solid $white;
 }
 
+.show-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: darken($primary, 10%);
+}
 // font
 h1,
 h2,

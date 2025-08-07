@@ -1,4 +1,6 @@
 export const environment = {
+  production: false,
+
   urlContact: 'https://wa.me/34608227891',
   title: 'Photo Josma',
   logoUrl: 'images/logo/logo-white.webp',
