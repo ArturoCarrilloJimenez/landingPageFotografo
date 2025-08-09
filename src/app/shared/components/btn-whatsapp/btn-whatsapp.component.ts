@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { environment } from '../../../environments/environments';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'shared-btn-whatsapp',
@@ -10,5 +10,6 @@ import { environment } from '../../../environments/environments';
 })
 export class BtnWhatsappComponent {
   contactUrl = environment.urlContact;
-  message = 'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
+  message =
+    'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
 }
