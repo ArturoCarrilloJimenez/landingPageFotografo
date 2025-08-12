@@ -1,0 +1,9 @@
+[build]
+# base = "landing-page-fotografo"
+  command = "ng build"
+  publish = "dist/landingPageFotografo/browser"
+
+  [redirects]
+  from = "/*"
+  to = "index.html"
+  status = 200
