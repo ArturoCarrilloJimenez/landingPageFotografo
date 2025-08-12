@@ -23,7 +23,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "."
               }
             ],
             "styles": ["src/styles.scss"],
@@ -47,7 +48,7 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all",
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
@@ -86,7 +87,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "."
               }
             ],
             "styles": ["src/styles.scss"]
