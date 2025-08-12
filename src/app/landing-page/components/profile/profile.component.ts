@@ -4,7 +4,6 @@ import {
   Component,
   ElementRef,
   HostListener,
-  inject,
   signal,
 } from '@angular/core';
 import { environment } from '../../../../environments/environment';
@@ -18,7 +17,9 @@ import { portfolioItems } from './data/profileData';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfileComponent {
-  constructor(private readonly elRef: ElementRef<HTMLElement>) {}
+  constructor(private readonly elRef: ElementRef<HTMLElement>) {
+    console.log(this.isActive);
+  }
 
   visibleItems = signal(6);
   urlContact = environment.urlContact;
@@ -27,21 +28,25 @@ export class ProfileComponent {
 
   portfolioItems = portfolioItems;
 
-  isActive = false;
+  isActive: boolean[] = portfolioItems.map(() => false);
 
   showMoreItems = () => {
     this.visibleItems.update((v) => v + 3);
   };
 
-  toggleActivate() {
-    this.isActive = !this.isActive;
+  toggleActivate(indexSelected: number) {
+    this.isActive = this.isActive.map((value, index) => {
+      return index == indexSelected ? !value : false;
+    });
   }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
-    const target = event.target as HTMLElement;
-    if (!this.elRef.nativeElement.contains(target)) {
-      this.isActive = false;
+    const target = event.target as HTMLElement | null;
+
+    // Si selecciona algo distinto a una imagen este hace reset los valores a false
+    if (!target || !target.closest('[data-portfolio-image]')) {
+      this.isActive.fill(false);
     }
   }
 }
