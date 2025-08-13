@@ -17,9 +17,7 @@ import { portfolioItems } from './data/profileData';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfileComponent {
-  constructor(private readonly elRef: ElementRef<HTMLElement>) {
-    console.log(this.isActive);
-  }
+  constructor(private readonly elRef: ElementRef<HTMLElement>) {}
 
   visibleItems = signal(6);
   urlContact = environment.urlContact;
