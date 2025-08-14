@@ -6,8 +6,8 @@
     class="container mx-auto flex items-center justify-center md:justify-between p-4 px-12"
   >
     <!-- Logo / Marca -->
-    <a class="text-xl font-bold text-primary"
-      ><img loading="lazy" class="h-10" [src]="urlLogo" alt="Photo Josma"
+    <a (click)="scrollToSection('hero')" class="text-xl font-bold text-primary cursor-pointer"
+      ><img class="h-10" [src]="urlLogo" alt="Photo Josma"
     /></a>
     <!-- Menú Desktop -->
     <ul class="hidden md:flex space-x-6 text-neutral-content">
