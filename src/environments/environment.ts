@@ -5,4 +5,6 @@ export const environment = {
   title: 'Photo Josma',
   logoUrl: 'images/logo/logo-white.webp',
   logoUrlDark: 'images/logo/logo-dark.webp',
+
+  domain: 'photojosma.netlify.app/',
 };

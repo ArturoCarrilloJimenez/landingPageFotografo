@@ -10,11 +10,7 @@
   >
     <!-- 1. Logo, descripción y RRSS -->
     <div itemprop="name">
-      <img
-        [src]="urlLogo"
-        alt="Photo Josma Logo"
-        class="h-20 mb-4 mx-auto"
-      />
+      <img [src]="urlLogo" alt="Photo Josma Logo" class="h-20 mb-4 mx-auto" />
       <p class="text-sm opacity-80 mb-4" itemprop="description">
         Capturando momentos únicos con cercanía, profesionalidad y entrega
         rápida.
@@ -155,5 +151,16 @@
   <!-- Derechos y mapa -->
   <div class="text-center">
     <p>&copy; 2025 Photo Josma. Todos los derechos reservados.</p>
+    <div class="flex justify-center gap-4">
+      <a href="/aviso-legal" class="hover:underline">Aviso Legal</a>
+      <span>|</span>
+      <a href="/privacidad" class="hover:underline"
+        >Política de Privacidad</a
+      >
+      <span>|</span>
+      <a href="/cookies" class="hover:underline"
+        >Política de Cookies</a
+      >
+    </div>
   </div>
 </footer>

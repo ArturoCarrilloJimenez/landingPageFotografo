@@ -10,16 +10,6 @@ interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   // Top 6 always visible
   {
-    src: 'images/destacadas/individual/niña_vestido_negro_sentada_v.webp',
-    alt: 'Retrato íntimo de niña con vestido negro sentada contemplativa en exterior en Almería',
-    title:
-      'Retrato infantil de niña con vestido negro | Fotógrafo Almería retratos',
-    description:
-      'Sesión de retrato infantil en Almería: joven modelo con mirada al horizonte, capturando elegancia y ternura. Fotógrafo de retratos en Almería, Granada y alrededores.',
-    category: 'Retrato Individual',
-    style: 'object-position: top;',
-  },
-  {
     src: 'images/destacadas/parejas/pareja_playa_v.webp',
     alt: 'Pareja de novios en la orilla del mar al atardecer en Almería',
     title: 'Pareja de novios en la orilla | Fotógrafo Almería bodas y parejas',
@@ -248,15 +238,5 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       'Primer plano de joven con barba y mirada intensa. Sesión de retrato individual. Fotógrafo en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
-  },
-  {
-    src: 'images/destacadas/individual/niña_vestido_negro_vista_orizonte_v.webp',
-    alt: 'Niña con vestido negro mirando al horizonte en exterior en Almería',
-    title:
-      'Niña con vestido negro mirando horizonte | Fotógrafo Almería retratos',
-    description:
-      'Retrato vertical de niña contemplativa al aire libre. Sensibilidad y naturalidad. Fotógrafo de retratos infantiles en Almería y provincia.',
-    category: 'Retrato Individual',
-    style: 'object-position: top;',
   },
 ];
