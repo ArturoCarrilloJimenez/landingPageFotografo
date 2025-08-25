@@ -7,10 +7,11 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BannerCookie } from "./shared/components/banner-cookie/banner-cookie";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, BannerCookie],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
