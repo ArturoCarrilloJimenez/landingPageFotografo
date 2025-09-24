@@ -10,6 +10,14 @@ interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   // Top 6 always visible
   {
+    src: 'images/destacadas/individual/chica-enpoderada-vestido-negro.webp',
+    alt: 'Retrato de modelo con vestido negro y actitud enérgica en Almería. Sesión de fotos natural y con estilo.',
+    title: 'Actitud y naturalidad | Fotógrafo Almería Retratos Individuales',
+    description:
+      'Sesión de fotos en Almería capturando la fuerza y el encanto natural de la modelo con un vestido negro. Retratos individuales que combinan elegancia urbana y espontaneidad.',
+    category: 'Retrato Individual',
+  },
+  {
     src: 'images/destacadas/parejas/pareja_playa_v.webp',
     alt: 'Pareja de novios en la orilla del mar al atardecer en Almería',
     title: 'Pareja de novios en la orilla | Fotógrafo Almería bodas y parejas',
@@ -52,14 +60,6 @@ export const portfolioItems: PortfolioItem[] = [
       'Sesión de comunión en exterior: niña vestida de comunión con mirada serena. Fotógrafo de retratos infantiles en Almería, Granada y alrededores.',
     category: 'Eventos',
     style: 'object-position: top;',
-  },
-  {
-    src: 'images/destacadas/individual/chica-enpoderada-vestido-negro.webp',
-    alt: 'Retrato de modelo con vestido negro y actitud enérgica en Almería. Sesión de fotos natural y con estilo.',
-    title: 'Actitud y naturalidad | Fotógrafo Almería Retratos Individuales',
-    description:
-      'Sesión de fotos en Almería capturando la fuerza y el encanto natural de la modelo con un vestido negro. Retratos individuales que combinan elegancia urbana y espontaneidad.',
-    category: 'Retrato Individual',
   },
 
   // Resto de imágenes intercaladas

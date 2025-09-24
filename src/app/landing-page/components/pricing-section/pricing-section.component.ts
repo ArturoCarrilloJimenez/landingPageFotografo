@@ -22,7 +22,7 @@ export class PricingSectionComponent {
     {
       title: 'Básico',
       description: 'Sesión corta para sesiones rápidas o retratos.',
-      price: '25 €',
+      price: '30 €',
       features: [
         '30 minutos de sesión en exterior',
         '30 fotos editadas (básicas)',
@@ -33,7 +33,7 @@ export class PricingSectionComponent {
       title: 'Estándar',
       description:
         'Ideal para sesiones en pareja o retratos donde cada detalle cuenta.',
-      price: '45 €',
+      price: '50 €',
       features: [
         '1 horas de sesión en exterior',
         '50 fotos editadas (estándar)',
@@ -46,7 +46,7 @@ export class PricingSectionComponent {
       title: 'Premium',
       description:
         'Para quienes buscan una experiencia completa y fotos de alta calidad.',
-      price: '90 €',
+      price: '100 €',
       features: [
         '2 horas de sesión en exterior',
         '100 fotos editadas (avanzadas)',
