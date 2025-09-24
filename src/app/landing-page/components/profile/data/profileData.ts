@@ -53,6 +53,14 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Eventos',
     style: 'object-position: top;',
   },
+  {
+    src: 'images/destacadas/individual/chica-enpoderada-vestido-negro.webp',
+    alt: 'Retrato de modelo con vestido negro y actitud enérgica en Almería. Sesión de fotos natural y con estilo.',
+    title: 'Actitud y naturalidad | Fotógrafo Almería Retratos Individuales',
+    description:
+      'Sesión de fotos en Almería capturando la fuerza y el encanto natural de la modelo con un vestido negro. Retratos individuales que combinan elegancia urbana y espontaneidad.',
+    category: 'Retrato Individual',
+  },
 
   // Resto de imágenes intercaladas
   {
@@ -80,6 +88,14 @@ export const portfolioItems: PortfolioItem[] = [
       'Silhueta marítima y cielo cálido sobre Cable Inglés. Fotógrafo de paisajes costeros en Almería y provincia.',
     category: 'Paisaje',
     style: 'object-position: top;',
+  },
+  {
+    src: 'images/destacadas/individual/chica-pose-natural-vestido-negro.webp',
+    alt: 'Modelo con pose natural y relajada en Almería. Fotografía de retrato con luz natural.',
+    title: 'Poses naturales y auténticas | Sesión de fotos en Almería',
+    description:
+      'Retrato de la modelo en una pose natural y sin artificios, reflejando su personalidad en una sesión de fotos en Almería. Fotógrafo especializado en capturar la esencia de cada persona.',
+    category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/eventos/familia_parque_comunion_v.webp',
@@ -136,6 +152,14 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Conciertos',
   },
   {
+    src: 'images/destacadas/individual/chica-vestido-negro.webp',
+    alt: 'Retrato de una chica en Almería con un elegante vestido negro, mostrando un look natural y sofisticado.',
+    title: 'Elegancia natural | Fotógrafo Retrato Individual Almería',
+    description:
+      'Sesión de fotos en Almería donde la modelo luce un vestido negro, capturando su elegancia y naturalidad. Ideal para retratos de moda con un enfoque personal y auténtico.',
+    category: 'Retrato Individual',
+  },
+  {
     src: 'images/destacadas/parejas/pareja_playa_2_v.webp',
     alt: 'Pareja abrazada en la orilla del mar en Almería',
     title: 'Pareja abrazada en playa | Fotógrafo Almería parejas',
@@ -152,6 +176,14 @@ export const portfolioItems: PortfolioItem[] = [
       'Imagen vertical del edificio con fachada artística. Fotografía urbana y arquitectura. Fotógrafo en Almería y provincia.',
     category: 'Paisaje',
     style: 'object-position: top;',
+  },
+  {
+    src: 'images/destacadas/individual/chica-vestido-negro-edificio-mariposas.webp',
+    alt: 'Modelo posando con vestido negro frente al Edificio Mariposas de Almería. Sesión urbana y natural.',
+    title: 'Retratos urbanos en Almería | Fotógrafo en Edificio Mariposas',
+    description:
+      'Fotografía de la modelo con vestido negro posando de forma espontánea frente al icónico Edificio Mariposas en Almería. Sesiones de fotos urbanas que fusionan la naturalidad y el entorno.',
+    category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/eventos/lejionario_v.webp',
@@ -212,6 +244,14 @@ export const portfolioItems: PortfolioItem[] = [
       'Captura íntima de pareja posando frente a cámara. Fotógrafo profesional de parejas en Almería, Granada y alrededores.',
     category: 'Pareja',
     style: 'object-position: top;',
+  },
+  {
+    src: 'images/destacadas/individual/chica-vista-camara-pose-natural.webp',
+    alt: 'Modelo mirando a cámara con pose natural y mirada cautivadora en una sesión en Almería.',
+    title: 'Mirada auténtica y pose natural | Fotógrafo Retratos Almería',
+    description:
+      'Retrato de la modelo con una pose natural y una mirada directa a cámara, capturando su carisma en una sesión de fotos en Almería. Fotógrafo profesional que crea conexiones auténticas.',
+    category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/paisajes/moto_v.webp',
