@@ -9,6 +9,7 @@ import {
 } from './components';
 import { BtnWhatsappComponent, HeaderComponent, NavbarComponent } from '../shared/components';
 import { FooterComponent } from "../shared/components/footer/footer.component";
+import { Reviews } from "./components/reviews/reviews";
 
 @Component({
   selector: 'app-landing-page',
@@ -21,7 +22,8 @@ import { FooterComponent } from "../shared/components/footer/footer.component";
     ProfileComponent,
     PricingSectionComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    Reviews
 ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',

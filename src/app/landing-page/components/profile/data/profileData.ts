@@ -18,12 +18,12 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Retrato Individual',
   },
   {
-    src: 'images/destacadas/parejas/pareja_playa_v.webp',
-    alt: 'Pareja de novios en la orilla del mar al atardecer en Almería',
-    title: 'Pareja de novios en la orilla | Fotógrafo Almería bodas y parejas',
+    src: 'images/destacadas/eventos/niños_comunion_v.webp',
+    alt: 'Retrato de niña vestida de comunión con mirada serena en Almería',
+    title: 'Retrato infantil de comunión | Fotógrafo Almería retratos',
     description:
-      'Retrato vertical de pareja nupcial en la playa. Luz suave y estilo elegante. Fotógrafo de bodas y parejas en Almería y provincia.',
-    category: 'Pareja',
+      'Sesión de comunión en exterior: niña vestida de comunión con mirada serena. Fotógrafo de retratos infantiles en Almería, Granada y alrededores.',
+    category: 'Eventos',
     style: 'object-position: top;',
   },
   {
@@ -53,12 +53,12 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Retrato Individual',
   },
   {
-    src: 'images/destacadas/eventos/niños_comunion_v.webp',
-    alt: 'Retrato de niña vestida de comunión con mirada serena en Almería',
-    title: 'Retrato infantil de comunión | Fotógrafo Almería retratos',
+    src: 'images/destacadas/parejas/pareja_playa_v.webp',
+    alt: 'Pareja de novios en la orilla del mar al atardecer en Almería',
+    title: 'Pareja de novios en la orilla | Fotógrafo Almería bodas y parejas',
     description:
-      'Sesión de comunión en exterior: niña vestida de comunión con mirada serena. Fotógrafo de retratos infantiles en Almería, Granada y alrededores.',
-    category: 'Eventos',
+      'Retrato vertical de pareja nupcial en la playa. Luz suave y estilo elegante. Fotógrafo de bodas y parejas en Almería y provincia.',
+    category: 'Pareja',
     style: 'object-position: top;',
   },
 
