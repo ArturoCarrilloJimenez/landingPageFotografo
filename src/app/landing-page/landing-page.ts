@@ -13,7 +13,7 @@ import {
   ProfileComponent,
 } from '../shared/components';
 import { FooterComponent } from '../shared/components/footer/footer.component';
-import { Reviews } from './components/reviews/reviews';
+import { ReviewsComponent } from './components/reviews/reviews';
 import { portfolioItems } from './data/profileData';
 import { loopImages } from './data/infinityLoop';
 
@@ -29,7 +29,7 @@ import { loopImages } from './data/infinityLoop';
     PricingSectionComponent,
     NavbarComponent,
     FooterComponent,
-    Reviews,
+    ReviewsComponent,
   ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
