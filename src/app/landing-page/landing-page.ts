@@ -1,15 +1,21 @@
 import { Component } from '@angular/core';
 
 import {
-  InfiniteLoop,
   AboutMeComponent,
   Hero,
   PricingSectionComponent,
-  ProfileComponent,
 } from './components';
-import { BtnWhatsappComponent, HeaderComponent, NavbarComponent } from '../shared/components';
-import { FooterComponent } from "../shared/components/footer/footer.component";
-import { Reviews } from "./components/reviews/reviews";
+import {
+  BtnWhatsappComponent,
+  HeaderComponent,
+  InfiniteLoop,
+  NavbarComponent,
+  ProfileComponent,
+} from '../shared/components';
+import { FooterComponent } from '../shared/components/footer/footer.component';
+import { Reviews } from './components/reviews/reviews';
+import { portfolioItems } from './data/profileData';
+import { loopImages } from './data/infinityLoop';
 
 @Component({
   selector: 'app-landing-page',
@@ -23,9 +29,12 @@ import { Reviews } from "./components/reviews/reviews";
     PricingSectionComponent,
     NavbarComponent,
     FooterComponent,
-    Reviews
-],
+    Reviews,
+  ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
 })
-export class LandingPage {}
+export class LandingPage {
+  portfolioItems = portfolioItems;
+  infinityLoopImages = loopImages;
+}

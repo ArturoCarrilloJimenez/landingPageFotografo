@@ -5,7 +5,7 @@
 >
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      *ngFor="let item of portfolioItems.slice(0, visibleItems()); let i = index"
+      *ngFor="let item of portfolioItems().slice(0, visibleItems()); let i = index"
       class="group cursor-pointer relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
       [ngClass]="{
         'shadow-2xl transition-all duration-500': isActive[i]
@@ -59,7 +59,7 @@
 
   <!-- Ver más -->
   <div
-    *ngIf="visibleItems() < portfolioItems.length"
+    *ngIf="visibleItems() < portfolioItems().length"
     [ngClass]="{
           'text-center mt-12 transition-all duration-1000 delay-500': true,
         }"
@@ -70,14 +70,14 @@
     >
       Ver Más Trabajos
       <span class="ml-2 text-sm"
-        >({{ portfolioItems.length - visibleItems() }} restantes)</span
+        >({{ portfolioItems().length - visibleItems() }} restantes)</span
       >
     </button>
   </div>
 
   <!-- Todos mostrados -->
   <div
-    *ngIf="visibleItems() >= portfolioItems.length"
+    *ngIf="visibleItems() >= portfolioItems().length"
     [ngClass]="{
           'text-center mt-12 transition-all duration-1000 delay-500': true,
         }"

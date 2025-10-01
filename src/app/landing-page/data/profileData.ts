@@ -1,11 +1,4 @@
-interface PortfolioItem {
-  src: string;
-  alt: string;
-  title: string;
-  description: string;
-  category: 'Retrato Individual' | 'Pareja' | 'Paisaje' | 'Eventos' | 'Conciertos';
-  style?: string;
-}
+import { PortfolioItem } from "../../shared/components/profile/profile.component";
 
 export const portfolioItems: PortfolioItem[] = [
   // Top 6 always visible

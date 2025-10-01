@@ -1,21 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { LoopImage } from "../../shared/components/infinite-loop/infinite-loop";
 
-interface LoopImage {
-  src: string;
-  alt: string;
-  title: string;
-}
-
-@Component({
-  selector: 'landing-page-infinite-loop',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './infinite-loop.html',
-  styleUrl: './infinite-loop.scss',
-})
-export class InfiniteLoop {
-  loopImages: LoopImage[] = [
+export const loopImages: LoopImage[] = [
     {
       src: 'images/destacadas/individual/chica_playa_v.webp',
       alt: 'Retrato íntimo con luz natural y enfoque selectivo.',
@@ -47,8 +32,3 @@ export class InfiniteLoop {
       title: 'Chico viendo el paisaje con una sonrisa',
     },
   ];
-
-  get loopImagesWithDuplicates(): LoopImage[] {
-    return [...this.loopImages, ...this.loopImages, ...this.loopImages];
-  }
-}
