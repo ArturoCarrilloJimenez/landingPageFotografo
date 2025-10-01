@@ -16,7 +16,7 @@ interface Review {
 export class ReviewsComponent {
   reviews: Review[] = [
     {
-      src: 'images/destacadas/individual/chica-enpoderada-vestido-negro.webp',
+      src: 'images/destacadas/parejas/pareja_playa_2_v.webp',
       alt: 'Reseña de Lidia',
       srcReview: 'images/reviews/lidia.png',
     },

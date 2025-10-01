@@ -16,7 +16,7 @@
     >
       <div *ngFor="let review of reviews" class="w-full flex-shrink-0 px-4">
         <div
-          class="flex flex-col bg-white border border-gray-200 rounded-xl transition-all duration-300 max-w-2xl mx-auto md:flex-row overflow-hidden group  h-48 sm:h-64 md:h-64"
+          class="flex flex-col bg-white border border-gray-200 rounded-xl transition-all duration-300 max-w-2xl mx-auto md:flex-row overflow-hidden group  h-auto sm:h-64 md:h-64"
         >
           <img
             class="object-cover w-full h-48 sm:h-64 md:h-64 md:w-48 lg:w-64 transition-transform duration-300"
@@ -25,7 +25,7 @@
           />
           <div class="flex flex-col justify-center p-6 flex-1">
             <img
-              class="w-full h-48 sm:h-64 md:h-64 object-contain"
+              class="w-full h-auto sm:h-64 md:h-64 object-contain"
               [src]="review.srcReview"
               [alt]="'Reseña de ' + review.src"
             />
