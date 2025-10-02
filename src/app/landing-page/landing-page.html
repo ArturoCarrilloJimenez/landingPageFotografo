@@ -12,7 +12,9 @@
       [description]="'Una selección de mis trabajos más representativos que capturan la esencia de cada momento'"
       class="mb-5"
     ></shared-header>
-    <landing-page-infinite-loop></landing-page-infinite-loop>
+    <shared-infinite-loop
+      [loopImages]="infinityLoopImages"
+    ></shared-infinite-loop>
   </section>
 
 
@@ -23,7 +25,7 @@
       [description]="'Fotos reales de sesiones para parejas en ubicaciones naturales'"
       class="mb-5"
     ></shared-header>
-    <landing-page-profile></landing-page-profile>
+    <shared-profile [portfolioItems]="portfolioItems"></shared-profile>
   </section>
 
   <!-- About me -->

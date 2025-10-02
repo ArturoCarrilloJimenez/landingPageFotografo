@@ -1,0 +1,15 @@
+@keyframes loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-loop-scroll {
+  animation: loop-scroll 80s linear infinite;
+  will-change: transform; /* Aislar en capa GPU */
+  backface-visibility: hidden; /* Optimizar renderizado */
+}

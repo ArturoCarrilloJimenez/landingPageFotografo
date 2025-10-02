@@ -1,3 +1,5 @@
+export { InfiniteLoop } from "./infinite-loop/infinite-loop";
+export { ProfileComponent } from "./profile/profile.component";
 export { FooterComponent } from "./footer/footer.component";
 export { BtnWhatsappComponent } from "./btn-whatsapp/btn-whatsapp.component";
 export { CardPricingComponent } from "./card-pricing/card-pricing.component";
