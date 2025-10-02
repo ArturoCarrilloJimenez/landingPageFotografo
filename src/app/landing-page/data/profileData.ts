@@ -1,27 +1,26 @@
-import { PortfolioItem } from "../../shared/components/profile/profile.component";
+import { PortfolioItem } from '../../shared/components/profile/profile.component';
 
 export const portfolioItems: PortfolioItem[] = [
-  // Top 6 always visible
   {
     src: 'images/destacadas/individual/chica-enpoderada-vestido-negro.webp',
-    alt: 'Retrato de modelo con vestido negro y actitud enérgica en Almería. Sesión de fotos natural y con estilo.',
-    title: 'Actitud y naturalidad | Fotógrafo Almería Retratos Individuales',
+    alt: 'Fotógrafo de retratos en Almería; modelo con vestido negro y actitud empoderada en sesión urbana',
+    title: 'Retrato individual empoderado | Fotógrafo en Almería y Granada',
     description:
-      'Sesión de fotos en Almería capturando la fuerza y el encanto natural de la modelo con un vestido negro. Retratos individuales que combinan elegancia urbana y espontaneidad.',
+      'Sesión de retrato en Almería que transmite fuerza y estilo natural. Fotógrafo especializado en retratos individuales en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/eventos/niños_comunion_v.webp',
-    alt: 'Retrato de niña vestida de comunión con mirada serena en Almería',
-    title: 'Retrato infantil de comunión | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de eventos en Almería; retrato de niña vestida de comunión con expresión serena en exteriores',
+    title: 'Retrato infantil de comunión | Fotógrafo en Almería y Granada',
     description:
-      'Sesión de comunión en exterior: niña vestida de comunión con mirada serena. Fotógrafo de retratos infantiles en Almería, Granada y alrededores.',
+      'Sesión de comunión en Almería con luz natural y estilo delicado. Fotógrafo de eventos en Almería, Granada y alrededores especializado en comuniones y retratos infantiles.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/paisajes/alambra_granada_v.webp',
-    alt: 'Imagen vertical de la Alhambra de Granada al atardecer con luz dorada',
+    alt: 'Fotógrafo de paisajes en Granada; imagen vertical de la Alhambra al atardecer con luz dorada',
     title: 'La Alhambra de Granada al atardecer | Fotógrafo Almería paisajes',
     description:
       'Imagen vertical de la Alhambra con luz dorada. Fotógrafo de paisajes en Almería, Granada y alrededores.',
@@ -30,97 +29,94 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/eventos/novios_beso_v.webp',
-    alt: 'Beso de novios en ceremonia nupcial en formato vertical en Almería',
-    title: 'Beso de novios en vertical | Fotógrafo Almería bodas',
+    alt: 'Fotógrafo de eventos en Almería; pareja de novios besándose tras la ceremonia en formato vertical',
+    title: 'Beso de novios en ceremonia | Fotógrafo en Almería y Granada',
     description:
-      'Retrato vertical de pareja de recién casados sellando su amor. Detalles íntimos. Fotógrafo de bodas y parejas en Almería y provincia.',
+      'Captura íntima de pareja recién casada en Almería. Fotógrafo de bodas y eventos en Almería, Granada y provincia con enfoque emocional y elegante.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chico_barba_vista_horizonte_h.webp',
-    alt: 'Retrato horizontal de joven con barba mirando el horizonte en Almería',
-    title: 'Chico con barba mirando el horizonte | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de retratos en Almería y Granada; joven con barba contemplando el horizonte en exteriores',
+    title: 'Retrato masculino contemplativo | Fotógrafo en Almería y Granada',
     description:
-      'Retrato horizontal de sujeto contemplando el horizonte. Emoción y profundidad. Fotógrafo de retratos en Almería y provincia.',
+      'Retrato horizontal en Almería con luz natural y expresión introspectiva. Fotógrafo profesional de retratos individuales en Almería y Granada.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/parejas/pareja_playa_v.webp',
-    alt: 'Pareja de novios en la orilla del mar al atardecer en Almería',
+    alt: 'Fotógrafo de parejas en Almería; pareja de novios en la orilla del mar al atardecer',
     title: 'Pareja de novios en la orilla | Fotógrafo Almería bodas y parejas',
     description:
-      'Retrato vertical de pareja nupcial en la playa. Luz suave y estilo elegante. Fotógrafo de bodas y parejas en Almería y provincia.',
+      'Retrato vertical de pareja nupcial en la playa. Luz suave y estilo elegante. Fotógrafo de parejas y bodas en Almería, Granada y alrededores.',
     category: 'Pareja',
     style: 'object-position: top;',
   },
-
-  // Resto de imágenes intercaladas
   {
     src: 'images/destacadas/individual/artista_dj_v.webp',
-    alt: 'Retrato de artista DJ en estudio con luces de neón en Almería',
-    title: 'Retrato de artista DJ en estudio | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de retratos en Almería; DJ en estudio con luces de neón y estilo moderno',
+    title: 'Retrato de DJ en estudio | Fotógrafo en Almería y Granada',
     description:
-      'Sesión de retrato de DJ: actitud, luces y estilo moderno. Fotógrafo de retrato individual en Almería, Granada y alrededores.',
-    category: 'Conciertos',
+      'Sesión de retrato a DJ en ambiente creativo en Almería. Fotógrafo de retratos individuales para artistas en Almería, Granada y alrededores.',
+    category: 'Retrato Individual',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/parejas/pareja_playa_h.webp',
-    alt: 'Pareja caminando juntas en la playa de Almería en plano horizontal',
+    alt: 'Fotógrafo de parejas en Almería; pareja caminando juntas por la orilla en plano horizontal',
     title: 'Pareja caminando en playa | Fotógrafo Almería parejas',
     description:
-      'Plano horizontal de pareja andando junto al agua. Momentos de complicidad. Fotógrafo en Almería y alrededores.',
+      'Plano horizontal de pareja andando junto al agua. Momentos de complicidad. Fotógrafo en Almería y alrededores especializado en sesiones románticas.',
     category: 'Pareja',
   },
   {
     src: 'images/destacadas/paisajes/atardecer_cable_ingles_v.webp',
-    alt: 'Atardecer sobre el Cable Inglés en Almería con cielo anaranjado',
+    alt: 'Fotógrafo de paisajes en Almería; atardecer sobre el Cable Inglés con cielo anaranjado',
     title: 'Atardecer en Cable Inglés, Almería | Fotógrafo Almería paisajes',
     description:
-      'Silhueta marítima y cielo cálido sobre Cable Inglés. Fotógrafo de paisajes costeros en Almería y provincia.',
+      'Silueta marítima y cielo cálido sobre el Cable Inglés. Fotógrafo de paisajes costeros en Almería y provincia.',
     category: 'Paisaje',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chica-pose-natural-vestido-negro.webp',
-    alt: 'Modelo con pose natural y relajada en Almería. Fotografía de retrato con luz natural.',
-    title: 'Poses naturales y auténticas | Sesión de fotos en Almería',
+    alt: 'Fotógrafo de retratos en Almería; modelo con vestido negro en pose relajada y natural',
+    title: 'Retrato con pose natural | Sesión en Almería y Granada',
     description:
-      'Retrato de la modelo en una pose natural y sin artificios, reflejando su personalidad en una sesión de fotos en Almería. Fotógrafo especializado en capturar la esencia de cada persona.',
+      'Retrato individual en Almería que refleja autenticidad y estilo personal. Fotógrafo de retratos espontáneos en Almería, Granada y provincia.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/eventos/familia_parque_comunion_v.webp',
-    alt: 'Retrato familiar al aire libre en parque durante comunión en Almería',
-    title:
-      'Sesión familiar en parque para comunión | Fotógrafo Almería eventos',
+    alt: 'Fotógrafo de eventos en Almería; retrato familiar en parque durante celebración de comunión',
+    title: 'Retrato familiar en comunión | Fotógrafo en Almería y Granada',
     description:
-      'Retrato de familia al aire libre en Almería durante comunión. Capturando emoción y unión. Fotógrafo de eventos en Almería, Granada y alrededores.',
+      'Sesión familiar al aire libre en Almería durante comunión. Fotógrafo de eventos en Almería, Granada y alrededores especializado en momentos espontáneos y naturales.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chica_chaqueta_negra_v.webp',
-    alt: 'Retrato de chica con chaqueta negra en entorno urbano de Almería',
-    title: 'Retrato de chica con chaqueta negra | Fotógrafo Almería moda',
+    alt: 'Fotógrafo de retratos urbanos en Almería; modelo con chaqueta negra en entorno moderno',
+    title: 'Retrato urbano juvenil | Fotógrafo en Almería y Granada',
     description:
-      'Close‑up de modelo juvenil con chaqueta negra. Elegancia urbana. Fotógrafo de moda y retratos en Almería y provincia.',
+      'Retrato en Almería con estética urbana y juvenil. Fotógrafo de moda y retratos individuales en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/parejas/pareja_vista_camara_v.webp',
-    alt: 'Pareja posando junta mirando a cámara en Almería',
+    alt: 'Fotógrafo de parejas en Almería; pareja posando junta mirando a cámara en exterior natural',
     title: 'Pareja mirando a cámara | Fotógrafo Almería retratos de pareja',
     description:
-      'Captura íntima de pareja posando frente a cámara. Fotógrafo profesional de parejas en Almería, Granada y alrededores.',
+      'Captura íntima de pareja posando frente a cámara. Fotógrafo profesional de parejas en Almería, Granada y alrededores con estilo natural y emocional.',
     category: 'Pareja',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/paisajes/cable_ingles_almeria_v.webp',
-    alt: 'Vista panorámica de la costa y el Cable Inglés en Almería',
+    alt: 'Fotógrafo de paisajes en Almería; vista panorámica del Cable Inglés y la costa',
     title: 'Vista panorámica de Cable Inglés | Fotógrafo Almería paisajes',
     description:
       'Fotografía de larga exposición en la costa de Almería. Paisaje marino profesional. Fotógrafo en Almería, Granada y alrededores.',
@@ -129,32 +125,32 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/eventos/grupo_lejion_v.webp',
-    alt: 'Fotografía de grupo de La Legión en acto oficial en Almería',
-    title: 'Grupo “La Legión” en desfile | Fotógrafo Almería reportajes',
+    alt: 'Fotógrafo de eventos en Almería; grupo de La Legión en formación oficial durante desfile',
+    title: 'Formación de La Legión | Fotógrafo en Almería y Granada',
     description:
-      'Fotografía de grupo de La Legión en acto oficial. Detalle y fuerza en cada imagen. Fotógrafo de eventos y reportajes en Almería, Granada y alrededores.',
+      'Fotografía de grupo militar en acto oficial en Almería. Fotógrafo de eventos institucionales y reportajes en Almería, Granada y provincia.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chica_concierto_v.webp',
-    alt: 'Retrato de artista en concierto con ambiente vibrante en Almería',
-    title: 'Retrato de artista en concierto | Fotógrafo Almería eventos',
+    alt: 'Fotógrafo de retratos en Almería; artista en concierto con ambiente escénico y luz vibrante',
+    title: 'Retrato artístico en concierto | Fotógrafo en Almería y Granada',
     description:
-      'Captura de artista en concierto con ambiente vibrante. Fotógrafo de eventos y retratos en Almería, Granada y alrededores.',
+      'Retrato de artista en escena musical en Almería. Fotógrafo de retratos creativos en Almería, Granada y provincia.',
     category: 'Conciertos',
   },
   {
     src: 'images/destacadas/individual/chica-vestido-negro.webp',
-    alt: 'Retrato de una chica en Almería con un elegante vestido negro, mostrando un look natural y sofisticado.',
-    title: 'Elegancia natural | Fotógrafo Retrato Individual Almería',
+    alt: 'Fotógrafo de retratos en Almería; modelo con vestido negro en sesión elegante y natural',
+    title: 'Retrato elegante y natural | Fotógrafo en Almería y Granada',
     description:
-      'Sesión de fotos en Almería donde la modelo luce un vestido negro, capturando su elegancia y naturalidad. Ideal para retratos de moda con un enfoque personal y auténtico.',
+      'Sesión de retrato en Almería que combina elegancia y espontaneidad. Fotógrafo de retratos individuales en Almería, Granada y provincia.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/parejas/pareja_playa_2_v.webp',
-    alt: 'Pareja abrazada en la orilla del mar en Almería',
+    alt: 'Fotógrafo de parejas en Almería; pareja abrazada en la orilla del mar en vertical',
     title: 'Pareja abrazada en playa | Fotógrafo Almería parejas',
     description:
       'Imagen vertical de pareja abrazándose frente al mar. Romántico y natural. Fotógrafo de parejas en Almería, Granada y alrededores.',
@@ -163,7 +159,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/paisajes/edificio_mariposas_almeria_v.webp',
-    alt: 'Fachada artística del Edificio Mariposas en Almería en vertical',
+    alt: 'Fotógrafo de paisajes urbanos en Almería; fachada artística del Edificio Mariposas en vertical',
     title: 'Edificio Mariposas en Almería | Fotógrafo Almería arquitectura',
     description:
       'Imagen vertical del edificio con fachada artística. Fotografía urbana y arquitectura. Fotógrafo en Almería y provincia.',
@@ -172,26 +168,26 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/individual/chica-vestido-negro-edificio-mariposas.webp',
-    alt: 'Modelo posando con vestido negro frente al Edificio Mariposas de Almería. Sesión urbana y natural.',
-    title: 'Retratos urbanos en Almería | Fotógrafo en Edificio Mariposas',
+    alt: 'Fotógrafo de retratos en Almería; modelo con vestido negro frente al Edificio Mariposas',
+    title: 'Retrato urbano en Edificio Mariposas | Fotógrafo en Almería',
     description:
-      'Fotografía de la modelo con vestido negro posando de forma espontánea frente al icónico Edificio Mariposas en Almería. Sesiones de fotos urbanas que fusionan la naturalidad y el entorno.',
+      'Sesión frente al emblemático Edificio Mariposas en Almería. Fotógrafo de retratos urbanos en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/eventos/lejionario_v.webp',
-    alt: 'Primer plano de legionario con uniforme en Almería',
-    title: 'Retrato de legionario | Fotógrafo Almería retratos militares',
+    alt: 'Fotógrafo de eventos en Almería; primer plano de legionario con uniforme y actitud solemne',
+    title: 'Retrato militar en desfile | Fotógrafo en Almería y Granada',
     description:
-      'Primer plano de legionario con uniforme y actitud imponente. Profesionalismo en cada disparo. Fotógrafo de retratos en Almería y provincia.',
+      'Retrato de legionario en acto oficial en Almería. Fotógrafo de eventos y reportajes en Almería, Granada y alrededores con enfoque documental y expresivo.',
     category: 'Eventos',
   },
   {
     src: 'images/destacadas/individual/chica_playa_h.webp',
-    alt: 'Retrato horizontal de modelo en la playa de Almería con luz natural',
-    title: 'Retrato horizontal en playa | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de retratos en Almería; modelo en la playa con luz natural y estilo relajado',
+    title: 'Retrato en la playa | Sesión en Almería y Granada',
     description:
-      'Sesión de fotografía individual en la costa de Almería: espontaneidad y luz natural. Fotógrafo de retratos en Almería y alrededores.',
+      'Retrato horizontal en la costa de Almería con atmósfera cálida. Fotógrafo de retratos naturales en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
   },
   {
@@ -204,7 +200,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/paisajes/fuente_granada_v.webp',
-    alt: 'Fuente monumental en espacio público de Granada en vertical',
+    alt: 'Fotógrafo de paisajes en Granada; fuente monumental en espacio público en formato vertical',
     title: 'Fuente emblemática de Granada | Fotógfo Almería paisajes',
     description:
       'Captura de fuente monumental en espacio público. Fotógrafo de arquitectura y paisaje en Almería y alrededores.',
@@ -213,19 +209,19 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/eventos/novia_entrada_coche_v.webp',
-    alt: 'Novia subiendo al coche nupcial tras ceremonia en Almería',
-    title: 'Novia entrando al coche nupcial | Fotógrafo Almería bodas',
+    alt: 'Fotógrafo de eventos en Almería; novia entrando al coche nupcial tras la ceremonia',
+    title: 'Novia en coche nupcial | Fotógrafo de bodas en Almería y Granada',
     description:
-      'Momento emotivo de novia subiendo al coche tras ceremonia. Captura de elegancia y detalle. Fotógrafo de bodas en Almería y alrededores.',
+      'Momento emotivo de la novia tras la ceremonia en Almería. Fotógrafo de bodas y eventos en Almería, Granada y provincia con estilo elegante y natural.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chica_playa_v2.webp',
-    alt: 'Retrato alternativo de modelo en la playa de Almería',
-    title: 'Retrato alternativo en playa | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de retratos en Almería; modelo en playa con composición creativa y luz dorada',
+    title: 'Retrato creativo en playa | Fotógrafo en Almería y Granada',
     description:
-      'Variación de sesión en la playa con composición moderna. Fotógrafo de retratos individuales en Almería y provincia.',
+      'Sesión alternativa en la playa de Almería con enfoque artístico. Fotógrafo de retratos individuales en Almería, Granada y provincia.',
     category: 'Retrato Individual',
     style: 'object-position: top;',
   },
@@ -240,15 +236,15 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/individual/chica-vista-camara-pose-natural.webp',
-    alt: 'Modelo mirando a cámara con pose natural y mirada cautivadora en una sesión en Almería.',
-    title: 'Mirada auténtica y pose natural | Fotógrafo Retratos Almería',
+    alt: 'Fotógrafo de retratos en Almería; modelo mirando a cámara con expresión auténtica',
+    title: 'Retrato con mirada directa | Sesión en Almería y Granada',
     description:
-      'Retrato de la modelo con una pose natural y una mirada directa a cámara, capturando su carisma en una sesión de fotos en Almería. Fotógrafo profesional que crea conexiones auténticas.',
+      'Retrato individual con conexión visual y estilo sincero. Fotógrafo de retratos personales en Almería, Granada y provincia.',
     category: 'Retrato Individual',
   },
   {
     src: 'images/destacadas/paisajes/moto_v.webp',
-    alt: 'Motocicleta estacionada en paisaje rústico de Almería',
+    alt: 'Fotógrafo de paisajes en Almería; motocicleta estacionada en paisaje rústico',
     title: 'Motocicleta en entorno natural | Fotógrafo Almería paisajes',
     description:
       'Moto estacionada en paisaje rústico. Combinación de detalle y entorno. Fotógrafo en Almería, Granada y alrededores.',
@@ -256,20 +252,19 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     src: 'images/destacadas/eventos/virgen_cofrade_v.webp',
-    alt: 'Paso de la Virgen en procesión cofrade en Almería',
-    title:
-      'Hermandad cofrade con imagen de la Virgen | Fotógrafo Almería tradiciones',
+    alt: 'Fotógrafo de eventos en Almería; imagen de la Virgen en procesión cofrade con detalles dorados',
+    title: 'Procesión cofrade en Almería | Fotógrafo de eventos tradicionales',
     description:
-      'Escena de procesión con el paso de la Virgen. Cultura y emoción andaluza. Fotógrafo de eventos religiosos en Almería y provincia.',
+      'Captura de procesión con imagen de la Virgen en Almería. Fotógrafo de eventos en Almería, Granada y alrededores especializado en tradiciones culturales y religiosas.',
     category: 'Eventos',
     style: 'object-position: top;',
   },
   {
     src: 'images/destacadas/individual/chico_barba_v.webp',
-    alt: 'Primer plano de hombre con barba y mirada intensa en Almería',
-    title: 'Retrato de chico con barba | Fotógrafo Almería retratos',
+    alt: 'Fotógrafo de retratos en Almería; primer plano de joven con barba y mirada intensa',
+    title: 'Retrato masculino en primer plano | Fotógrafo en Almería y Granada',
     description:
-      'Primer plano de joven con barba y mirada intensa. Sesión de retrato individual. Fotógrafo en Almería, Granada y alrededores.',
+      'Retrato individual en Almería con enfoque expresivo y profesional. Fotógrafo de retratos en Almería, Granada y alrededores.',
     category: 'Retrato Individual',
   },
 ];
