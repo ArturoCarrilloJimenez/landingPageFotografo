@@ -1,3 +1,4 @@
+export { HeroComponent } from "./hero/hero";
 export { InfiniteLoop } from "./infinite-loop/infinite-loop";
 export { ProfileComponent } from "./profile/profile.component";
 export { FooterComponent } from "./footer/footer.component";

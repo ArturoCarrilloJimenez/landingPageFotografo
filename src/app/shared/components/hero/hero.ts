@@ -3,31 +3,57 @@ import {
   Component,
   ElementRef,
   inject,
+  Input,
   OnDestroy,
   PLATFORM_ID,
   ViewChild,
 } from '@angular/core';
-import { environment } from '../../../../environments/environment';
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/all';
+import { environment } from '../../../../environments/environment';
+
+export interface HeroConfig {
+  title: string;
+  description: string;
+  ctaText?: string;
+  message?: string;
+  backgroundImageDesktop?: string;
+  backgroundImageMobile?: string;
+}
 
 @Component({
-  selector: 'landing-page-hero',
-  imports: [],
+  selector: 'shared-hero',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './hero.html',
-  styleUrl: './hero.scss',
+  styleUrls: ['./hero.scss'],
 })
-export class Hero implements AfterViewInit, OnDestroy {
+export class HeroComponent implements AfterViewInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
 
   @ViewChild('descriptionEl', { static: true }) descriptionEl!: ElementRef;
   private splitTextInstance: SplitText | undefined;
 
+  @Input({ required: true }) config!: HeroConfig;
+
+  // Propiedades fijas del environment
   contactUrl = environment.urlContact;
-  message =
-    'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.';
   logoUrl = environment.logoUrl;
+
+  get heroStyles() {
+    const styles: any = {};
+    if (this.config?.backgroundImageDesktop) {
+      styles['background-image'] = `url(${this.config.backgroundImageDesktop})`;
+    }
+    return styles;
+  }
+
+  get mobileBackgroundStyle() {
+    return this.config?.backgroundImageMobile
+      ? `url(${this.config.backgroundImageMobile})`
+      : null;
+  }
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -37,7 +63,6 @@ export class Hero implements AfterViewInit, OnDestroy {
         setTimeout(() => {
           const el = this.descriptionEl.nativeElement;
 
-          // Crear SplitText inmediatamente
           this.splitTextInstance = new SplitText(el, {
             type: 'words, chars',
           });

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 
 import {
   AboutMeComponent,
-  Hero,
   PricingSectionComponent,
 } from './components';
 import {
   BtnWhatsappComponent,
   HeaderComponent,
+  HeroComponent,
   InfiniteLoop,
   NavbarComponent,
   ProfileComponent,
@@ -16,11 +16,12 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { ReviewsComponent } from './components/reviews/reviews';
 import { portfolioItems } from './data/profileData';
 import { loopImages } from './data/infinityLoop';
+import { HeroConfig } from '../shared/components/hero/hero';
 
 @Component({
   selector: 'app-landing-page',
   imports: [
-    Hero,
+    HeroComponent,
     InfiniteLoop,
     BtnWhatsappComponent,
     AboutMeComponent,
@@ -37,4 +38,13 @@ import { loopImages } from './data/infinityLoop';
 export class LandingPage {
   portfolioItems = portfolioItems;
   infinityLoopImages = loopImages;
+  heroConfig: HeroConfig = {
+    title:
+      'Fotógrafo en Almería y Granada especializado en retratos individuales, parejas, bodas, bautizos, comuniones y eventos',
+    description:
+      'Sesiones al aire libre en Almería, Granada, Guadix y Roquetas. Cercanía, profesionalidad y calidad garantizada en cada fotografía.',
+    ctaText: 'Reserva tu sesión por WhatsApp',
+    backgroundImageDesktop: '/images/hero/portada-h.webp',
+    backgroundImageMobile: '/images/hero/portada-v.webp',
+  };
 }
