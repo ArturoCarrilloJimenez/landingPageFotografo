@@ -1,12 +1,11 @@
 .hero {
-  background-image: url("/images/hero/portada-h.webp");
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 1080px) {
-  .hero {
-    background-image: url("/images/hero/portada-v.webp");
+  .hero[style*="--mobile-bg"] {
+    background-image: var(--mobile-bg) !important;
     background-position: top center;
   }
 }

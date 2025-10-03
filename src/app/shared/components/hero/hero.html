@@ -1,21 +1,23 @@
-<header id="hero" class="hero min-h-screen sticky top-0">
+<header
+  id="hero"
+  class="hero min-h-screen sticky top-0"
+  [ngStyle]="heroStyles"
+  [style.--mobile-bg]="mobileBackgroundStyle"
+>
   <div class="hero-overlay"></div>
 
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
       <img [src]="logoUrl" alt="Fotógrafo en Almería y Granada | Photo Josma" />
-      <h1 class="mb-5 font-semibold">
-        Fotógrafo en Almería y Granada especializado en retratos individuales, parejas, bodas, bautizos, comuniones y eventos
-      </h1>
-      <p class="mb-5">
-        Sesiones al aire libre en Almería, Granada, Guadix y Roquetas. Cercanía, profesionalidad y calidad garantizada en cada fotografía.
-      </p>
+      <h1 class="mb-5 font-semibold">{{ config.title }}</h1>
+      <p #descriptionEl class="mb-5 invisible">{{ config.description }}</p>
       <a
-        [href]="contactUrl + '?text=' + message"
+        [href]="contactUrl + '?text=' + (config.message ?? 'Hola, he visto tu web y me gustaría saber más sobre tus servicios de fotografía.') "
         target="_blank"
         class="btn btn-primary"
-        >Reserva tu sesión por WhatsApp</a
       >
+        {{ config.ctaText || 'Reserva tu sesión por WhatsApp' }}
+      </a>
     </div>
   </div>
 
