@@ -25,7 +25,7 @@ export class PricingSectionComponent {
       price: '30 €',
       features: [
         '30 minutos de sesión en exterior',
-        '30 fotos editadas (básicas)',
+        '20 fotos editadas (básicas)',
         'Entrega digital en 5 días',
       ],
     },
@@ -36,7 +36,7 @@ export class PricingSectionComponent {
       price: '50 €',
       features: [
         '1 horas de sesión en exterior',
-        '50 fotos editadas (estándar)',
+        '40 fotos editadas (estándar)',
         'Entrega digital en 5 días',
         'Posibilidad de ir a otras ubicaciones (esto puede aumentar el precio)',
       ],
@@ -49,8 +49,8 @@ export class PricingSectionComponent {
       price: '100 €',
       features: [
         '2 horas de sesión en exterior',
-        '100 fotos editadas (avanzadas)',
-        'Entrega digital en 5 días',
+        '80 fotos editadas (avanzadas)',
+        'Entrega digital en 10 días',
         'Posibilidad de ir a otras ubicaciones (esto puede aumentar el precio)',
         'Se puede personalizar el paquete según tus necesidades',
       ],
