@@ -19,6 +19,26 @@ export const portfolioItems: PortfolioItem[] = [
     style: 'object-position: top;',
   },
   {
+    src: 'images/destacadas/individual/ninaflamenca.webp',
+    alt: 'Fotógrafo de Retratos Naturales en Almería y Granada - Retrato individual auténtico de niña vestida de flamenca con guitarra en entorno natural',
+    title:
+      'Fotógrafo Almería Granada - Retrato Individual Infantil de Flamenca con Naturalidad',
+    description:
+      'Sesiones de Retrato Individual infantil con estilo natural y auténtico en Almería y Granada, capturando la alegría y la emoción en un entorno natural y espontáneo.',
+    category: 'Retrato Individual',
+    style: 'object-position: center;',
+  },
+  {
+    src: 'images/destacadas/individual/cableinglesnocturna.webp',
+    alt: 'Fotógrafo de Retratos Naturales en Almería y Granada - Retrato individual elegante en el Cable Inglés de noche, con estilo natural y espontáneo',
+    title:
+      'Fotógrafo Almería Granada - Retrato Individual Elegante en el Cable Inglés con Naturalidad',
+    description:
+      'Sesiones de Retrato Individual con estilo natural, elegante y espontáneo en Almería y Granada, capturando la esencia en ubicaciones icónicas como el Cable Inglés.',
+    category: 'Retrato Individual',
+    style: 'object-position: center;',
+  },
+  {
     src: 'images/destacadas/paisajes/alambra_granada_v.webp',
     alt: 'Fotógrafo de paisajes en Granada; imagen vertical de la Alhambra al atardecer con luz dorada',
     title: 'La Alhambra de Granada al atardecer | Fotógrafo Almería paisajes',
